@@ -7,6 +7,9 @@ import MenuButtonJava from "./MenuButtonJava";
 import {FaJava} from "react-icons/fa";
 import {Icon} from 'semantic-ui-react';
 import { Link } from "react-router-dom";
+import { Route} from "react-router";
+import Profile_JS from "./Profile_PJ";
+
 const Menu= styled.div`
     position:fixed;   
     display:flex;
@@ -35,8 +38,8 @@ class Menubar extends React.Component{
             <Menu>
                 <a href="https://www.instagram.com/kbs_uu/"><MenuButtonInsta text="Instagram" color="#3f279b"></MenuButtonInsta></a>
                 <a href="https://github.com/GanziMan"><MenuButtonGithub text="Github" color="#171515"></MenuButtonGithub></a>
-                <a href=""><MenuButtonUser text="Profile" color="#171515"></MenuButtonUser></a>
-                <a href=""><MenuButtonJava text="Java" color="#744e3b"></MenuButtonJava></a>
+                <Link to="Profile_PJ"><MenuButtonUser text="Profile" color="#171515"></MenuButtonUser></Link>
+                <a href=""><MenuButtonJava text="empty" color="#744e3b"></MenuButtonJava></a>
             </Menu>
             </div>
     }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Icon} from 'semantic-ui-react';
 import {FaUser} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
-import {FaJava} from "react-icons/fa";
+import {FaBatteryEmpty} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {FaIcons} from "react-icons/fa";
 const ButtonST=styled.div`
@@ -30,7 +30,7 @@ const ButtonST=styled.div`
 class MenuButtonJava extends React.Component{
     render(){
         return <ButtonST color={this.props.color}>
-                <FaJava style={{fontSize:"30px"}}></FaJava>
+                <FaBatteryEmpty style={{fontSize:"30px"}}></FaBatteryEmpty>
                 <br></br>
                 <br></br>
                 <span>{this.props.text}</span>

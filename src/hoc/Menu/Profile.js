@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import img from './bumsu.jpeg';
+import Menubar from "./Menubar";
+
 const Profilebox= styled.div`
         position:fixed;
         width:800px;
@@ -14,14 +16,12 @@ const Profilebox= styled.div`
             margin:15px 0px;
         }
       
-        
+     
 `;
-
 
 class Profile extends React.Component{
     render(){
         return <div>
-                
                 <Profilebox>
                 <h2 style={{textAlign:"center"}}>Web Developer Portfolio</h2>
                     <img style={{width:"300px",border:"1px solid black",borderRadius:"8em",margin:"10px"}} src={img}></img>
@@ -46,9 +46,13 @@ class Profile extends React.Component{
                         <li>
                             <strong>School</strong>: Hallym University
                         </li>
+                        <h2>About Me</h2>
+                        Hello I'm handsome Web Developer
                      </ul>
+                  
                 </Profilebox>
-               </div>
+                <Menubar></Menubar>
+               </div> 
     }
 }
 
