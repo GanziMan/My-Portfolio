@@ -1,28 +1,40 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, About } from './pages';
 import Menubar from './hoc/Menu/Menubar';
 import Profile from './hoc/Menu/Profile';
 import Profile_PJ from './hoc/Menu/Profile_PJ';
-import { Link } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
-import Button from './components/Button';
-import { dark } from './theme';
-import { light } from './theme';
-import useTheme from './useTheme';
 import { useState } from 'react';
-import Switch1 from './Switch';
+import { lightTheme, darkTheme } from './theme';
+import { GlobalStyles } from './global';
+import Toggle from './Toggle';
 function App() {
-    const [themeMode, toggleTheme] = useTheme(); // hook 함수 하용
-    const theme = themeMode === 'light' ? light : dark; // 테마 환경에 맞는 테마 컬러 가져오기.
-    const [value, setValue] = useState(false);
+    // App.js
+   
     return (
         <div>
+
+           
             <Switch>
-                <Route exact path="/" component={Profile} />
-                <Route path="/Profile_PJ" component={Profile_PJ} />
-            </Switch>
+                    <Route exact path="/" component={Profile} />
+                    <Route path="/Profile_PJ" component={Profile_PJ} />
+                </Switch>
+
+
+
+            {/*<Switch2 value={value} onChange={value => setValue(value)} /> */}
+            {/*   <ThemeProvider theme={theme}>
+                <S.Main>
+              
+                    <Button title={theme === 'light' ? '일반모드로 테마 변경하기' : '다크모드로 테마 변경하기'}
+                        click={toggleTheme} />
+                        
+                </S.Main>
+             
+               
+    </ThemeProvider>
+            */}
+
 
         </div>
     );

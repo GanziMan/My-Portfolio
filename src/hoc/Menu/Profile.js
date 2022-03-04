@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import img from './bumsu.jpeg';
 import Menubar from "./Menubar";
+import { useState } from 'react';
+import { lightTheme, darkTheme } from '../../theme';
 
+import { GlobalStyles } from "../../global";
+import Toggle from "../../Toggle";
+import { ThemeProvider } from "styled-components";
 const Profilebox= styled.div`
         position:fixed;
         width:800px;
@@ -19,13 +24,29 @@ const Profilebox= styled.div`
      
 `;
 
-class Profile extends React.Component{
-    render(){
-        return <div>
+function Profile() { 
+   
+    const [theme, setTheme] = useState('light');
+    const toggleTheme = () => {
+        // if the theme is not light, then set it to dark
+        if (theme === 'light') {
+            setTheme('dark');
+            // otherwise, it should be light
+        } else {
+            setTheme('light');
+        }
+    }   
+        return (
+        <div>
+            
                 <Profilebox>
                 <h2 style={{textAlign:"center"}}>Web Developer Portfolio</h2>
                     <img style={{width:"300px",border:"1px solid black",borderRadius:"8em",margin:"10px"}} src={img}></img>
                      <ul style={{listStyle:"none",float:"right"}}>
+                     <div style={{ alignItems: "left" }}>
+                    <Toggle theme={theme} toggleTheme={toggleTheme} />
+                    It's a {theme === 'light' ? 'light theme' : 'dark theme'}!
+                </div>
                          <hr></hr>
                          <br></br>
                         <li>
@@ -52,8 +73,15 @@ class Profile extends React.Component{
                   
                 </Profilebox>
                 <Menubar></Menubar>
+                <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+              
+              <>
+                  <GlobalStyles />
+              </>
+              
+          </ThemeProvider>
                </div> 
-    }
-}
+  ); 
+};
 
 export default Profile;

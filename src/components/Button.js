@@ -16,7 +16,7 @@ export default Button;
 const S = {};
 
 S.Button = styled.button`
-  margin: 5rem;
+ 
   width:20rem;
   height: 20rem;
   border: none;
