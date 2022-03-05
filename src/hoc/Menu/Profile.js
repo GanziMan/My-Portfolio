@@ -45,7 +45,7 @@ function Profile() {
                      <ul style={{listStyle:"none",float:"right"}}>
                      <div style={{ alignItems: "left" }}>
                     <Toggle theme={theme} toggleTheme={toggleTheme} />
-                    It's a {theme === 'light' ? 'light theme' : 'dark theme'}!
+                   {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
                 </div>
                          <hr></hr>
                          <br></br>
