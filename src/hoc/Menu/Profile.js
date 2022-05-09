@@ -4,7 +4,6 @@ import img from './bumsu.jpeg';
 import Menubar from "./Menubar";
 import { useState } from 'react';
 import { lightTheme, darkTheme } from '../../theme';
-
 import { GlobalStyles } from "../../global";
 import Toggle from "../../Toggle";
 import { ThemeProvider } from "styled-components";

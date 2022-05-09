@@ -1,11 +1,11 @@
-import React, { Component, useEffect} from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Profile from './hoc/Menu/Profile';
 import Profile_PJ from './hoc/Menu/Profile_PJ';
-import styled, { ThemeProvider } from 'styled-components';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import {FaPlus,FaMinus,FaDatabase,FaHtml5,FaCss3,FaPaperclip,FaJs, FaPython, FaJava, FaReact} from "react-icons/fa";
+import styled from 'styled-components';
+
+
+import {FaDatabase,FaHtml5,FaCss3,FaPaperclip,FaJs, FaPython, FaJava, FaReact} from "react-icons/fa";
 
 
 const AC = styled.div`
@@ -55,23 +55,7 @@ summary{
 }
 `;
 function App() {
-    // App.js
-    const toggle =(i) =>{
-        if(selected == i ){
-            return setSeleted(null);
-        }
-        setSeleted(i);
-    }
-    const [selected,setSeleted]=useState(null);
-    const [message, setMessage] = useState("");
-   
-    useEffect(() => {
-        fetch('/home1')
-        .then(response => response.text())
-        .then(message => {
-        setMessage(message);
-        });
-        },[])
+    
         
     return (
        

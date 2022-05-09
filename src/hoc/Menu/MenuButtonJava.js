@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {Icon} from 'semantic-ui-react';
-import {FaUser} from "react-icons/fa";
-import {FaInstagram} from "react-icons/fa";
 import {FaBatteryEmpty} from "react-icons/fa";
-import {FaGithub} from "react-icons/fa";
-import {FaIcons} from "react-icons/fa";
+
 const ButtonST=styled.div`
     padding:30px;
     background-color:#fff;

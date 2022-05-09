@@ -4,11 +4,9 @@ import MenuButtonInsta from "./MenuButtonInsta";
 import MenuButtonUser from "./MenuButtonUser";
 import MenuButtonGithub from "./MenuButtonGithub";
 import MenuButtonJava from "./MenuButtonJava";
-import {FaJava} from "react-icons/fa";
-import {Icon} from 'semantic-ui-react';
+
 import { Link } from "react-router-dom";
-import { Route} from "react-router";
-import Profile_JS from "./Profile_PJ";
+
 
 const Menu= styled.div`
     position:relative;   
