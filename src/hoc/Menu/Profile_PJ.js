@@ -1,18 +1,16 @@
 import React from "react";
-import styled from "styled-components";
 
 
 
-const PJ_li = styled.div`
 
-`;
+
  
 class Profile_PJ extends React.Component {
     render() {
    
         return (
             <div>
-                <PJ_li>
+                
                    <ul style={{listStyle:"none"}}>
                        <li>
                            경기도 공공 체육시설 조회 사이트
@@ -34,7 +32,7 @@ class Profile_PJ extends React.Component {
                        </li>
                      
                    </ul>
-                </PJ_li>
+               
             </div>
 
         )

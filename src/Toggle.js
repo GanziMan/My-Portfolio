@@ -5,7 +5,7 @@ import { func, string } from 'prop-types';
 import './Toggle.styled.css';
 
 const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === 'light';
+ 
   return (
    
     
