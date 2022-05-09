@@ -2,8 +2,6 @@ import React from "react";
 
 
 
-
-
  
 class Profile_PJ extends React.Component {
     render() {

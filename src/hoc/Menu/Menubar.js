@@ -15,7 +15,7 @@ const Menu= styled.div`
     bottom:0;
     top:349px;
     width:560px;
-    background-color:#efefef;
+  
     height:150px;
     left:50%;
     padding:15px 30px;

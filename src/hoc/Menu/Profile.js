@@ -7,6 +7,9 @@ import { lightTheme, darkTheme } from '../../theme';
 import { GlobalStyles } from "../../global";
 import Toggle from "../../Toggle";
 import { ThemeProvider } from "styled-components";
+
+
+
 const Profilebox= styled.div`
         position:relative;
         width:800px;
@@ -14,7 +17,7 @@ const Profilebox= styled.div`
         top:500px;
         left:50%;
         transform:translateX(-50%);
-        border:1px solid black;
+        border:1px solid;
         border-radius:4em;
         li{
             margin:15px 0px;
@@ -55,7 +58,7 @@ function Profile() {
                             <strong>Name</strong>: Bumsu Kim  
                         </li>
                         <li>
-                            <strong>Email</strong>: qjatn50089@gmail.com    
+                            <strong>Email</strong>:qjatn50089@gmail.com 
                         </li>
                         <li>
                             <strong>Phone</strong>: 010-2784-0955
@@ -66,14 +69,16 @@ function Profile() {
                         <h2>About Me</h2>
                         Hello I'm handsome Web Developer
                      </ul>
-                
+                 
                 </Profilebox>
-                <Menubar></Menubar>
+               
                 <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-              
-                <section style={{position:"relative",top:"1000px"}}></section>
-                  <GlobalStyles />
-          </ThemeProvider>
+                <Menubar></Menubar>
+                <GlobalStyles ></GlobalStyles>
+                </ThemeProvider>
+                
+                
+         
                </div> 
   ); 
 };
