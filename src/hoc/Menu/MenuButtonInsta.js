@@ -21,9 +21,9 @@ const ButtonST=styled.div`
     }
     span{
         position:absolute;
-       bottom:10%;
-       left:50%;
-       transform:translateX(-50%);
+        bottom:10%;
+        left:50%;
+        transform:translateX(-50%);
         }
   
     
@@ -36,7 +36,6 @@ class MenuButtonInsta extends React.Component{
                 <br></br>
                 <br></br>
                 <span>{this.props.text}</span>
-
                </ButtonST>;
     }
 }

@@ -19,13 +19,11 @@ const ButtonST=styled.div`
         transform:scale(1.1);
     }
     span{
-        position:absolute;
+       position:absolute;
        bottom:10%;
        left:50%;
-       transform:translateX(-50%);
-        }
-  
-    
+       transform:translateX(-50%);   
+    }
 `;
 class MenuButtonUser extends React.Component{
     render(){
@@ -34,7 +32,7 @@ class MenuButtonUser extends React.Component{
                 <br></br>
                 <br></br>
                 <span>{this.props.text}</span>
-               </ButtonST>;
+               </ButtonST>
     }
 }
 

@@ -9,10 +9,10 @@ import { GlobalStyles } from "../../global";
 import Toggle from "../../Toggle";
 import { ThemeProvider } from "styled-components";
 const Profilebox= styled.div`
-        position:fixed;
+        position:relative;
         width:800px;
-        height:500px;
-        bottom:40%;
+        height:700px;
+        top:500px;
         left:50%;
         transform:translateX(-50%);
         border:1px solid black;
@@ -20,8 +20,6 @@ const Profilebox= styled.div`
         li{
             margin:15px 0px;
         }
-      
-     
 `;
 
 function Profile() { 
@@ -38,15 +36,14 @@ function Profile() {
     }   
         return (
         <div>
-            
-                <Profilebox>
+            <Profilebox>
                 <h2 style={{textAlign:"center"}}>Web Developer Portfolio</h2>
-                    <img style={{width:"300px",border:"1px solid black",borderRadius:"8em",margin:"10px"}} src={img}></img>
+                    <img style={{ width:"300px",border:"1px solid black",borderRadius:"8em",marginLeft:"40px"}} src={img}></img>
                      <ul style={{listStyle:"none",float:"right"}}>
-                     <div style={{ alignItems: "left" }}>
+                     <div>
                     <Toggle theme={theme} toggleTheme={toggleTheme} />
                    {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
-                </div>
+                  </div>
                          <hr></hr>
                          <br></br>
                         <li>
@@ -70,15 +67,13 @@ function Profile() {
                         <h2>About Me</h2>
                         Hello I'm handsome Web Developer
                      </ul>
-                  
+                
                 </Profilebox>
                 <Menubar></Menubar>
                 <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
               
-              <>
+                <section style={{position:"relative",top:"1000px"}}></section>
                   <GlobalStyles />
-              </>
-              
           </ThemeProvider>
                </div> 
   ); 

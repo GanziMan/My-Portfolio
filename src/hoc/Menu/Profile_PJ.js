@@ -1,44 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-import {FaMobile} from "react-icons/fa";
-import { Fa500Px } from "react-icons/fa";
+import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
+
+
 const PJ_li = styled.div`
 
-    table{
-
-        border-spacing: 200px;
-    }
-  
 `;
  
 class Profile_PJ extends React.Component {
     render() {
+   
         return (
-          
             <div>
                 <PJ_li>
-                    <div style={{textAlign:"right"}}>                     
-                        <table>
-                        <tr>
-                            <td>1번</td>
+                   <ul style={{listStyle:"none"}}>
+                       <li>
+                           경기도 공공 체육시설 조회 사이트
+                       </li>
+                       <li>
+                           웹 기반 파킨슨병 인지장애 스크리닝 시스템
+                       </li>
+                       <li>
+                           코로나 지역별 간편 확인 사이트
+                       </li>
 
-                            <td>2번</td>
+                       <li>
+                           대학교 부정입학 필터링 사이트
+                           사용 스택: HTML5, CSS3, Srping, JSP, Mysql 
+                       </li>
 
-                            <td>3번</td>
-                        </tr>
-                        <tr>
-                            <td>2_1번</td>
-
-                            <td>2_2번</td>
-                            
-                            <td>2_3번</td>
-                        </tr>
-                    </table>
-                    </div>
-            
+                       <li>
+                           React로 개발을 한 웹 개발자 포트폴리오
+                       </li>
+                     
+                   </ul>
                 </PJ_li>
             </div>
-
 
         )
     }

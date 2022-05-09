@@ -24,4 +24,4 @@ export const GlobalStyles = createGlobalStyle`
   background: ${({ theme }) => theme.body};
 color: ${({ theme }) => theme.text};
 transition: all 0.25s linear;
-`
+`;

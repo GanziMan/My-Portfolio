@@ -11,13 +11,14 @@ import { Route} from "react-router";
 import Profile_JS from "./Profile_PJ";
 
 const Menu= styled.div`
-    position:fixed;   
+    position:relative;   
     display:flex;
     justify-content:space-between;
     bottom:0;
+    top:349px;
     width:560px;
     background-color:#efefef;
-    height:120px;
+    height:150px;
     left:50%;
     padding:15px 30px;
     padding-bottom:10px;
@@ -40,8 +41,11 @@ class Menubar extends React.Component{
                 <a href="https://github.com/GanziMan"><MenuButtonGithub text="Github" color="#171515"></MenuButtonGithub></a>
                 <Link to="Profile_PJ"><MenuButtonUser text="Profile" color="#171515"></MenuButtonUser></Link>
                 <a href=""><MenuButtonJava text="empty" color="#744e3b"></MenuButtonJava></a>
+                
             </Menu>
+            
             </div>
+           
     }
 }
 
