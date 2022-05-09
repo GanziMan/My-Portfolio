@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/GanziMan/My-Portfolio/static/css/main.55107da5.css",
+    "main.js": "/GanziMan/My-Portfolio/static/js/main.5ab06b2a.js",
+    "static/js/787.cfd8f164.chunk.js": "/GanziMan/My-Portfolio/static/js/787.cfd8f164.chunk.js",
+    "static/media/bumsu.jpeg": "/GanziMan/My-Portfolio/static/media/bumsu.64decde39d2850a53ccd.jpeg",
+    "index.html": "/GanziMan/My-Portfolio/index.html",
+    "main.55107da5.css.map": "/GanziMan/My-Portfolio/static/css/main.55107da5.css.map",
+    "main.5ab06b2a.js.map": "/GanziMan/My-Portfolio/static/js/main.5ab06b2a.js.map",
+    "787.cfd8f164.chunk.js.map": "/GanziMan/My-Portfolio/static/js/787.cfd8f164.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55107da5.css",
+    "static/js/main.5ab06b2a.js"
+  ]
+}
