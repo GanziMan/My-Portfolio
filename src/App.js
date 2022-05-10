@@ -17,10 +17,13 @@ const AC = styled.div`
     top:400px;
     left:50%;
     transform:translateX(-50%);
+    margin-left: auto; 
+    margin-right: auto;
 
 }
 .accordion{
-    width:2000px;
+   text-align:center;
+   display:inline-block;
 }
 .item{
     background:Black;
@@ -60,8 +63,14 @@ details{
 }
 table{
     position:relative;
-     left:50%;
-    transform:translateX(50%);
+    text-align:center;
+    margin-left: auto; 
+    margin-right: auto;
+    
+}
+table h1{
+    font-size:60px;
+  
 }
 `;
 function App() {
@@ -78,9 +87,9 @@ function App() {
             <AC>
                         <div className='wrapper'>
                  
-                    <section style={{position:"relative", background:"black",color:"white" }}>
-                    
-                    <h1>Project_LIST <FaPaperclip/> </h1>
+                    <section style={{position:"relative", background:"black",color:"white" ,width:"100%"}}>
+    <div style={{ textAlign:"center"}}>    
+    <h1>Project_LIST <FaPaperclip/> </h1>
       <div className="accordion">
         <details>
             <summary>
@@ -143,38 +152,36 @@ function App() {
         </strong>
         </details>
       </div>
+      </div>
+
       </section>
 
-      <section style={{position:"relative", background:"#FFDA6B",color:"BLACK" }}>
+      <section style={{position:"relative", background:"#FFDA6B",color:"BLACK",width:"100%" }}>
        
-          
+         
           <table>
               <caption>    <h1>사용스택 <FaPaperclip></FaPaperclip> </h1> </caption>
               <tr>
                   <td><h1>Front-end</h1></td>
+                  <td><h1>Back-end</h1></td>
+                  <td><h1>Deployment</h1></td>
               </tr>
               <tr>
                   <td><h1><FaHtml5></FaHtml5> <FaCss3></FaCss3> <FaJs></FaJs> <FaReact></FaReact> </h1></td>
+                  <td><h1><FaHtml5></FaHtml5> <FaCss3></FaCss3> <FaJs></FaJs> <FaReact></FaReact> </h1></td>
+                  <td><h1><FaHtml5></FaHtml5> <FaCss3></FaCss3> <FaJs></FaJs> <FaReact></FaReact> </h1></td>
+              
               </tr>
              
-              <tr>
-                 <td><h1>Back-end</h1></td>
-              </tr>
-              <tr>
-                  <td><h1><FaHtml5></FaHtml5> <FaCss3></FaCss3> <FaJs></FaJs> <FaReact></FaReact> </h1></td>
-              </tr>
+             
+             
+                  
 
-              <tr>
-              <td><h1>Deployment</h1></td>
-              </tr>
-
-              <tr>
-                  <td><h1><FaHtml5></FaHtml5> <FaCss3></FaCss3> <FaJs></FaJs> <FaReact></FaReact> </h1></td>
-              </tr>
               
-
+                  
               <tr><td></td></tr>
           </table>
+          
       </section>
    
       </div>

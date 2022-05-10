@@ -12,16 +12,16 @@ import { ThemeProvider } from "styled-components";
 
 const Profilebox= styled.div`
         position:relative;
-        width:800px;
+        width:1000px;
         height:700px;
         top:500px;
-        left:50%;
-        transform:translateX(-50%);
+        display:inline-block;
         border:1px solid;
         border-radius:4em;
         li{
             margin:15px 0px;
         }
+       
 `;
 
 function Profile() { 
@@ -37,7 +37,7 @@ function Profile() {
         }
     }   
         return (
-        <div>
+        <div style={{textAlign:"center"}}>
             <Profilebox>
                 <h2 style={{textAlign:"center"}}>Web Developer Portfolio</h2>
                     <img style={{ width:"300px",border:"1px solid black",borderRadius:"8em",marginLeft:"40px"}} alt="profile" src={img}></img>
