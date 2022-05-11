@@ -16,11 +16,12 @@ const Profilebox= styled.div`
         height:700px;
         top:500px;
         display:inline-block;
-        border:1px solid;
+        border:4px solid;
         border-radius:4em;
         li{
             margin:15px 0px;
         }
+        box-shadow:6px 5px 5px 5px rgba(0,0,0,0.2);
        
 `;
 
@@ -43,7 +44,7 @@ function Profile() {
                     <img style={{ width:"300px",border:"1px solid black",borderRadius:"8em",marginLeft:"40px"}} alt="profile" src={img}></img>
                      <ul style={{listStyle:"none",float:"right"}}>
                      <div>
-                    <Toggle theme={theme} toggleTheme={toggleTheme} />
+                    <Toggle   theme={theme} toggleTheme={toggleTheme} />
                    {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
                   </div>
                          <hr></hr>
