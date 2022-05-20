@@ -1,22 +1,9 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 
 export  const ContactUs = () =>{
-    const form = useRef();
-
-    
-
-    class ContactUs extends React.Component{
-        render(){
-            const sendEmail = (e) =>{
-                e.preventDefault();
-                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current,'YOUR_USERID').then((result)=>{
-                    console.log(result.text);
-                }, (error)=> {
-                    console.log(error.text);
-                });
-            };
-            return  <form ref={form} onSubmit={sendEmail} action="">
+      
+            return  <form action="">
             <label htmlFor="">Name</label>
             <input type="text" name='user_name' />
             <label htmlFor="">Email</label>
@@ -26,7 +13,5 @@ export  const ContactUs = () =>{
             <input type="submit" value='Send' />
         </form>
         }
-    }
-   
-}
+
 export default ContactUs;

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import img from './bumsu.jpeg';
+import img from './bumsu2.JPG';
 import Menubar from "./Menubar";
 import { useState } from 'react';
 import { lightTheme, darkTheme } from '../../theme';
 import { GlobalStyles } from "../../global";
 import Toggle from "../../Toggle";
 import { ThemeProvider } from "styled-components";
-
+import Emailform from "./email.js"
 
 
 const Profilebox= styled.div`
@@ -40,9 +40,9 @@ function Profile() {
         return (
         <div style={{textAlign:"center"}}>
             <Profilebox>
-                <h2 style={{textAlign:"center"}}>Web Developer Portfolio</h2>
-                    <img style={{ width:"300px",border:"1px solid black",borderRadius:"8em",marginLeft:"40px"}} alt="profile" src={img}></img>
-                     <ul style={{listStyle:"none",float:"right"}}>
+                <h2 style={{}}>Web Developer Portfolio</h2>
+                    <img style={{ width:"300px",border:"1px solid black",borderRadius:"8em",marginLeft:"50px"}} alt="profile" src={img}></img>
+                     <ul style={{listStyle:"none",float:"right",marginRight:"50px",textAlign:"left"}}>
                      <div>
                     <Toggle   theme={theme} toggleTheme={toggleTheme} />
                    {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
@@ -50,7 +50,7 @@ function Profile() {
                          <hr></hr>
                          <br></br>
                         <li>
-                            <strong>Programming Language</strong>: Java, HTML, CSS, Python
+                            <strong>Programming Language</strong>: HTML, Js, CSS, Python, Java
                         </li>
                         <li>
                             <strong>Frameworks</strong>: Spring, React.js, Django, JSP
@@ -69,12 +69,14 @@ function Profile() {
                         </li>
                         <h2>About Me</h2>
                         Hello I'm handsome Web Developer
+                      /* emailform */
                      </ul>
                  
                 </Profilebox>
                
                 <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
                 <Menubar></Menubar>
+               
                 <GlobalStyles ></GlobalStyles>
                 </ThemeProvider>
                 
