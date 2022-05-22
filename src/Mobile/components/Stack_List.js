@@ -41,7 +41,7 @@ export const Stack_List = () => {
             <AC>
                 <div className="wrapper">
                     <section style={{ position: "relative", color: "BLACK"}}>
-                        
+                        <br />
                         <h1>사용스택 <FaPaperclip></FaPaperclip> </h1>
                         <br />
                         <div className="Stack"><h1 style={{ color: "#ffc107" }}>Front-end</h1>
@@ -50,6 +50,7 @@ export const Stack_List = () => {
                                     <h1> <SiDjango></SiDjango> <SiSpring></SiSpring> <SiMysql></SiMysql>  </h1></div>
                                     <div className="Stack"><h1 style={{ color: "#ffc107" }}>Deployment</h1>
                                     <h1><SiNetlify></SiNetlify> </h1></div>
+                                    <br />
                     </section>
                 </div>
             </AC>

@@ -14,8 +14,9 @@ export const Project_List = () => {
         width:110vw;
     }
     .accordion{
-      
+       margin-left:5%;
        display:inline-block;
+       text-align:left;
     }
     .accordion:hover{
        
@@ -60,7 +61,8 @@ export const Project_List = () => {
         text-align:left;
     }
     strong{
-        font-size:10px;
+        font-size:5px;
+       
     }
     
     `;
@@ -72,7 +74,7 @@ export const Project_List = () => {
                         <div style={{ marginRight: "20px" }}>
                             <h1 style={{ paddingTop: "30px" }}>Project_LIST <FaPaperclip /> </h1>
                             <div className="accordion">
-                                <details className='ac1'>
+                               
                                     <summary>
                                         <h1>경기도 공공 체육시설 조회 <FaHtml5 /> <FaCss3 /> <FaJs /> <FaJava /> <SiMysql /> </h1>
                                     </summary>
@@ -81,9 +83,9 @@ export const Project_List = () => {
                                     <strong> Frontend </strong>: HTML5, CSS3, Javascript<br></br>
                                     <strong> Backend </strong>: Java, JSP <br />
                                     <strong> DataBase </strong>: Mysql
-                                </details>
+                               
                               
-                                <details className='ac1'>
+                            
                                     <summary>
                                         <h1>로지스틱 회귀모델을 활용한 웹 기반의 인지장애 스크리닝 시스템 <FaHtml5 /> <FaCss3 /> <FaJs /> <FaJava /> <SiMysql /> </h1>
                                     </summary>
@@ -93,17 +95,14 @@ export const Project_List = () => {
                                     <strong> Frontend </strong>: HTML5, CSS3, Javascript <br />
                                     <strong> Backend </strong>: Java, JSP <br />
                                     <strong>DataBase</strong>  : Mysql <br />
-                                </details>
-                                <details className='ac1'>
+                               
                                     <summary> <h1>대학입학 부정입학 필터링 <FaHtml5 /> <FaCss3 /> <FaJava /> <SiSpring></SiSpring> <SiMysql /> </h1>
                                     </summary>
                                     <strong>주요 기능 : 각 입학 전형을 선택하여 기준에 맞는 정보를 입력받아 부정입학인지 아닌지 필터링하는 시스템 </strong>  <br />
                                     <strong> Frontend </strong>: HTML5, CSS3 <br />
                                     <strong> Backend </strong> : Spring Framework <br />
                                     <strong> DataBase </strong>: Mysql
-                                </details>
-
-                                <details className='ac1'>
+                             
                                     <summary><h1>코로나19 통합 정보제공  <FaHtml5 /> <FaCss3 /> <FaPython /> <SiDjango></SiDjango> <SiMysql /></h1>
                                     </summary>
                                     <strong> 주요 기능 : 코로나19에 대한 통합적인 정보 제공 홈페이지를 제작. <br></br>사용자 위치에 따라 지역 확진자 수 업데이트, 지역 뉴스, 정부 뉴스 제공 </strong> <br />
@@ -111,18 +110,14 @@ export const Project_List = () => {
                                     <strong>Frontend </strong> : HTML5, CSS3, Javascript <br />
                                     <strong>Backend </strong>: Django Framework <br />
                                     <strong> DataBase </strong>: Mysql
-                                </details>
-
-                                <details className='ac1'>
+                              
                                     <summary> <h1>웹 개발자 포트폴리오 사이트<FaReact /></h1></summary>
                                     <strong>  주요 기능 : 웹 개발자 포트폴리오 사이트 입니다.</strong> <br />
                                     <strong> Github :  <a href="https://github.com/GanziMan/My-Portfolio">https://github.com/GanziMan/My-Portfolio</a> </strong><br />
                                     <strong> Frontend </strong> : React.js <br />
                                     <strong> Backend </strong> :
 
-                                </details>
-
-                                <details className='ac1'>
+                              
                                     <summary><h1>웹 개발자 프리랜서 <FaHtml5 /> <FaCss3 /> <FaJs /> <FaJava /> <FaPython /><FaReact /> <SiDjango></SiDjango> <SiSpring></SiSpring> <SiMysql />  </h1>
                                     </summary>
                                     <strong> 활동기간 : 2022.03.02 ~ ing <br />
@@ -132,11 +127,12 @@ export const Project_List = () => {
                                         작업 수 : 9건 <br />
                                         <strong> Freelancer Site: <a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a> </strong> <br />
                                     </strong>
-                                </details>
+                               
                             </div>
                         </div>
 
                     </section>
+                    <br /><br />
                 </div>
             </AC>
         </div>

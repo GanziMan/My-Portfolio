@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-import {FaQuestion} from "react-icons/fa";
-
+import {FaUser} from "react-icons/fa";
 const ButtonST=styled.div`
     padding:20px;
     background-color:#fff;
@@ -22,18 +20,17 @@ const ButtonST=styled.div`
        transform:translateX(-50%);   
     }
 `;
-class MenuButtonQnA extends React.Component{
+class MenuButtonUser extends React.Component{
     render(){
         return <ButtonST color={this.props.color}>
-                <FaQuestion style={{fontSize:"30px"}}></FaQuestion>
-                <br></br>
-                <br></br>
+                <FaUser style={{fontSize:"30px"}}></FaUser>
                 <span>{this.props.text}</span>
-                
-               </ButtonST>;
+                <br />
+                <br />
+               </ButtonST>
     }
 }
 
 
 
-export default MenuButtonQnA;
+export default MenuButtonUser;
