@@ -6,7 +6,6 @@ import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaPython, FaJava, FaReact } from "r
 export const Project_List = () => {
     const AC = styled.div`
     .wrapper{
-      
         position:relative;
         top:110px;
         transform:translateX(-50%); 
@@ -21,7 +20,6 @@ export const Project_List = () => {
     .accordion:hover{
        
     }
-  
     .item{
         background:Black;
         margin-bottom:5px;
@@ -55,14 +53,12 @@ export const Project_List = () => {
       
         transition:all 0.5s cubic-bezier(1,0,1,0);
     }
-    details{
-        margin:30px;
-       
-        text-align:left;
-    }
     strong{
-        font-size:5px;
+        font-size:11px;
        
+    }
+    h1{
+        font-size:20px;
     }
     
     `;
@@ -74,7 +70,6 @@ export const Project_List = () => {
                         <div style={{ marginRight: "20px" }}>
                             <h1 style={{ paddingTop: "30px" }}>Project_LIST <FaPaperclip /> </h1>
                             <div className="accordion">
-                               
                                     <summary>
                                         <h1>경기도 공공 체육시설 조회 <FaHtml5 /> <FaCss3 /> <FaJs /> <FaJava /> <SiMysql /> </h1>
                                     </summary>
@@ -83,9 +78,7 @@ export const Project_List = () => {
                                     <strong> Frontend </strong>: HTML5, CSS3, Javascript<br></br>
                                     <strong> Backend </strong>: Java, JSP <br />
                                     <strong> DataBase </strong>: Mysql
-                               
-                              
-                            
+
                                     <summary>
                                         <h1>로지스틱 회귀모델을 활용한 웹 기반의 인지장애 스크리닝 시스템 <FaHtml5 /> <FaCss3 /> <FaJs /> <FaJava /> <SiMysql /> </h1>
                                     </summary>
@@ -127,10 +120,8 @@ export const Project_List = () => {
                                         작업 수 : 9건 <br />
                                         <strong> Freelancer Site: <a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a> </strong> <br />
                                     </strong>
-                               
                             </div>
                         </div>
-
                     </section>
                     <br /><br />
                 </div>
