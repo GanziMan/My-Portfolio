@@ -7,7 +7,6 @@ import { lightTheme, darkTheme } from '../../theme';
 import { GlobalStyles } from "../../global";
 import Toggle from "../../Toggle";
 import { ThemeProvider } from "styled-components";
-
 import { Stack_List } from "../components/Stack_List";
 import { Project_List } from "../components/Project_List";
 import { useMediaQuery } from "react-responsive";

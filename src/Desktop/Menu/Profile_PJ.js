@@ -1,25 +1,20 @@
 import React from "react";
 
+import Container from "../container/Container";
 
 
  
-class Profile_PJ extends React.Component {
+class Profile_PJ_PC extends React.Component {
     render() {
    
         return (
             <div>
-                    <table>
-                        <caption>QnA</caption>
-                        <tr>
-                            <td>작성자</td>
-                            <td>제목</td>
-                        </tr>
-                    </table>
-                   
+           
+           <Container></Container>
             </div>
 
         )
     }
 }
 
-export default Profile_PJ;
+export default Profile_PJ_PC;

@@ -7,10 +7,12 @@ import { lightTheme, darkTheme } from '../../theme';
 import { GlobalStyles } from "../../global";
 import Toggle from "../../Toggle";
 import { ThemeProvider } from "styled-components";
-
 import { Stack_List } from "../components/Stack_List";
 import { Project_List } from "../components/Project_List";
 import { useMediaQuery } from "react-responsive";
+
+
+
 
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -32,8 +34,6 @@ const Default = ({ children }) => {
 
 const Profilebox = styled.div`
 position:relative;
-
-
 height:85vh;
 width:100vw;
 border:4px solid;
@@ -58,13 +58,11 @@ function Profile() {
     }
     return (
         <div style={{ textAlign: "center" }}>
-
-
             <Profilebox>
-              
+
                 <h2 style={{}}>Web Developer Portfolio</h2>
                 <img style={{ width: "300px", border: "1px solid black", borderRadius: "8em" }} alt="profile" src={img}></img>
-                <ul style={{ listStyle: "none",  textAlign: "left",float:"right",marginLeft:"-30%",marginRight:"27%"}}>
+                <ul style={{ listStyle: "none", textAlign: "left", float: "right", marginLeft: "-30%", marginRight: "27%" }}>
                     <div>
                         <Toggle theme={theme} toggleTheme={toggleTheme} />
                         {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
@@ -97,20 +95,15 @@ function Profile() {
                 <br />
                 <br />
                 <br />
-
-
-                
-               
                 <Project_List></Project_List>
-            <Stack_List></Stack_List>
+                <Stack_List></Stack_List>
+              
+              
             </Profilebox>
+
             <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
                 <GlobalStyles ></GlobalStyles>
             </ThemeProvider>
-
-
-         
-
         </div>
     );
 };

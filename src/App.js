@@ -1,9 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Profile from './Mobile/Menu/Profile';
-import Profile_PC from './Desktop/Menu/Profile';
 import Profile_PJ from './Mobile/Menu/Profile_PJ';
+
+import Profile_PC from './Desktop/Menu/Profile';
+import Profile_PJ_PC from './Desktop/Menu/Profile_PJ';
 import { useMediaQuery } from "react-responsive";
+import BoardList from './Desktop/components/BoardList';
+import Container from './Desktop/container/Container'
+
 
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -30,16 +35,22 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Profile} />
                 <Route path="/Profile_PJ" component={Profile_PJ} />
+
+                
             </Switch>
             </Mobile>
 
             <Desktop>
+            
             <Switch>
+           
                 <Route exact path="/" component={Profile_PC} />
-                <Route path="/Profile_PJ" component={Profile_PJ} />
+                <Route path="/Profile_PJ" component={Profile_PJ_PC} />
+                
             </Switch>
+            
             </Desktop>
-       
+           
         </div>
     );
 }
