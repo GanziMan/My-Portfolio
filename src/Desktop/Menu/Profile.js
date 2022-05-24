@@ -88,7 +88,7 @@ function Profile() {
                         <strong>School</strong>: Hallym University
                     </li>
                     <h2>About Me</h2>
-                    Hello I'm handsome Web Developer
+                    Hello, I am a Web developer and I am studying back-end
 
                 </ul>
             
