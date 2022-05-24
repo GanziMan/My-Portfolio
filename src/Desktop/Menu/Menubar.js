@@ -14,9 +14,7 @@ position:relative;
 display:flex;
 justify-content:space-between;
 bottom:0;
-top:50px;
 width:560px;
-
 height:150px;
 left:50%;
 padding:15px 30px;
