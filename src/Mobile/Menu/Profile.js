@@ -31,8 +31,9 @@ const Desktop = ({ children }) => {
 
 const Profilebox = styled.div`
         position:relative;
-        margin-top:1900px;
         width:110vw;
+        
+        margin-top:450%;
         top:130px;
         display:inline-block;
         border:4px solid;
