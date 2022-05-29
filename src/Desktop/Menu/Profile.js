@@ -61,7 +61,7 @@ function Profile() {
             <Profilebox>
 
                 <h2 style={{}}>Web Developer Portfolio</h2>
-                <img style={{ width: "300px", border: "1px solid black", borderRadius: "8em",float:"left",marginLeft:"30%" }} alt="profile" src={img}></img>
+                <img style={{ width: "300px",height:"", border: "1px solid black", borderRadius: "8em",float:"left",marginLeft:"30%" }} alt="profile" src={img}></img>
                 <ul style={{ listStyle: "none", textAlign: "left",float:"left" }}>
                     <div>
                         <Toggle theme={theme} toggleTheme={toggleTheme} />
