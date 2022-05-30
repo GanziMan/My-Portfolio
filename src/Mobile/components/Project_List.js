@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
-import { SiSpring, SiDjango, SiMysql,SiFlask } from "react-icons/si";
+import { SiSpring, SiDjango, SiMysql, SiFlask } from "react-icons/si";
 import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaPython, FaJava, FaReact } from "react-icons/fa";
 import Modal from 'react-modal';
 
@@ -109,10 +109,34 @@ export const Project_List = () => {
                                     <strong> Freelancer Site: <a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a> </strong> <br />
                                 </strong>
                                 <button onClick={() => setModalIsOpen(true)}>자세히 보기</button>
-                              
-                                <Modal
-                                    isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                                    
+
+
+                                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={{
+                                    overlay: {
+                                        position: "fixed",
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        backgroundColor: "rgba(255, 255, 255, 0.45)",
+                                        zIndex: 10,
+                                    },
+                                    content: {
+                                       
+                                        justifyContent: "center",
+                                        background: "white",
+                                        color:"balck",
+                                        overflow: "auto",
+                                        top: "10vh",
+                                        left: "10vw",
+                                        right: "10vw",
+                                        bottom: "10vh",
+                                        WebkitOverflowScrolling: "touch",
+                                        borderRadius: "14px",
+                                        outline: "none",
+                                        zIndex: 10,
+                                    }
+                                }}>
                                     <h2>크몽 웹 개발자 프리랜서</h2>
                                     <hr />
                                     <table>
@@ -125,19 +149,20 @@ export const Project_List = () => {
                                         </tr>
                                         <tr>
                                             <td> <h3>서비스 제공 절차</h3><strong> 요청 </strong> : 내용을 말씀해주시면 서로 소통 후 방안과 견적에 대해 상의합니다. <br />
-                                               <strong> 작업 </strong>: 상담 후 작업을 진행합니다. <br />
+                                                <strong> 작업 </strong>: 상담 후 작업을 진행합니다. <br />
                                                 <strong> 검토</strong>: 작업 내용물을 의뢰인분과 소통을 하고 수정합니다. (검토 후 작업을 진행하면서 서로 원활한 소통을 하겠습니다.) <br />
-                                               <strong> 종료</strong>: 검토 완료 후 의뢰인 분께 구매 확정 후 종료됩니다. <br />
-                                               
+                                                <strong> 종료</strong>: 검토 완료 후 의뢰인 분께 구매 확정 후 종료됩니다. <br />
+
                                             </td>
                                         </tr>
                                         <tfoot>
                                             <td><button onClick={() => setModalIsOpen(false)}>닫기</button></td>
                                         </tfoot>
                                     </table>
-
                                 </Modal>
-                                
+
+
+
                                 <br />
                                 <hr />
                                 <summary>
