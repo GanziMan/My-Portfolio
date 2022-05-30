@@ -3,34 +3,37 @@ import styled from 'styled-components';
 import { SiSpring, SiDjango, SiMysql, SiFlask } from "react-icons/si";
 import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaPython, FaJava, FaReact } from "react-icons/fa";
 import Modal from 'react-modal';
-
+import ModalKDBC from 'react-modal';
 export const Project_List = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const Modalst = {
-        overlay: {
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: "rgba(255, 255, 255, 0.45)",
-            zIndex: 10,
-        },
-        content: {
-            display: "flex",
-            justifyContent: "center",
-            background: "#ffffe7",
-            overflow: "auto",
-            top: "42vh",
-            left: "38vw",
-            right: "38vw",
-            bottom: "42vh",
-            WebkitOverflowScrolling: "touch",
-            borderRadius: "14px",
-            outline: "none",
-            zIndex: 10,
-        },
-    };
+    const [modalIsOpen2, setModalIsOpen2] = useState(false);
+    const [modalIsOpen3, setModalIsOpen3] = useState(false);
+    const Modalst = styled.div
+        `overlay: {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: "rgba(255, 255, 255, 0.45)",
+        zIndex: 10,
+    },
+    content: {
+       
+        justifyContent: "center",
+        background: "black",
+        color:"balck",
+        overflow: "auto",
+        top: "10vh",
+        left: "10vw",
+        right: "10vw",
+        bottom: "10vh",
+        WebkitOverflowScrolling: "touch",
+        borderRadius: "14px",
+        outline: "none",
+        zIndex: 10,
+    }
+    `;
 
 
     const AC = styled.div`
@@ -110,59 +113,34 @@ export const Project_List = () => {
                                 </strong>
                                 <button onClick={() => setModalIsOpen(true)}>자세히 보기</button>
 
+                                <Modalst>
+                                    <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
 
-                                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={{
-                                    overlay: {
-                                        position: "fixed",
-                                        top: 0,
-                                        left: 0,
-                                        right: 0,
-                                        bottom: 0,
-                                        backgroundColor: "rgba(255, 255, 255, 0.45)",
-                                        zIndex: 10,
-                                    },
-                                    content: {
-                                       
-                                        justifyContent: "center",
-                                        background: "white",
-                                        color:"balck",
-                                        overflow: "auto",
-                                        top: "10vh",
-                                        left: "10vw",
-                                        right: "10vw",
-                                        bottom: "10vh",
-                                        WebkitOverflowScrolling: "touch",
-                                        borderRadius: "14px",
-                                        outline: "none",
-                                        zIndex: 10,
-                                    }
-                                }}>
-                                    <h2>크몽 웹 개발자 프리랜서</h2>
-                                    <hr />
-                                    <table>
-                                        <tr>
-                                            <td><strong> 크몽 프리랜서 활동 URL : </strong>   <a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a></td>
-                                        </tr>
-                                        <br />
-                                        <tr>
-                                            <td> <strong> 활동 내용</strong>: HTML 제작된 웹사이트 유지보수, 수정, 개선, 기능추가를 하고 있습니다. <strong>작업기술 </strong> : <FaHtml5></FaHtml5>  <FaCss3></FaCss3> <SiSpring></SiSpring> <SiDjango></SiDjango><SiFlask></SiFlask> </td>
-                                        </tr>
-                                        <tr>
-                                            <td> <h3>서비스 제공 절차</h3><strong> 요청 </strong> : 내용을 말씀해주시면 서로 소통 후 방안과 견적에 대해 상의합니다. <br />
-                                                <strong> 작업 </strong>: 상담 후 작업을 진행합니다. <br />
-                                                <strong> 검토</strong>: 작업 내용물을 의뢰인분과 소통을 하고 수정합니다. (검토 후 작업을 진행하면서 서로 원활한 소통을 하겠습니다.) <br />
-                                                <strong> 종료</strong>: 검토 완료 후 의뢰인 분께 구매 확정 후 종료됩니다. <br />
+                                        <h2>크몽 웹 개발자 프리랜서</h2>
+                                        <hr />
+                                        <table>
+                                            <tr>
+                                                <td><strong> 크몽 프리랜서 활동 URL : </strong>   <a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a></td>
+                                            </tr>
+                                            <br />
+                                            <tr>
+                                                <td> <strong> 활동 내용</strong>: HTML 제작된 웹사이트 유지보수, 수정, 개선, 기능추가를 하고 있습니다. <strong>작업기술 </strong> : <FaHtml5></FaHtml5>  <FaCss3></FaCss3> <SiSpring></SiSpring> <SiDjango></SiDjango><SiFlask></SiFlask> </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <h3>서비스 제공 절차</h3><strong> 요청 </strong> : 내용을 말씀해주시면 서로 소통 후 방안과 견적에 대해 상의합니다. <br />
+                                                    <strong> 작업 </strong>: 상담 후 작업을 진행합니다. <br />
+                                                    <strong> 검토</strong>: 작업 내용물을 의뢰인분과 소통을 하고 수정합니다. (검토 후 작업을 진행하면서 서로 원활한 소통을 하겠습니다.) <br />
+                                                    <strong> 종료</strong>: 검토 완료 후 의뢰인 분께 구매 확정 후 종료됩니다. <br />
 
-                                            </td>
-                                        </tr>
-                                        <tfoot>
-                                            <td><button onClick={() => setModalIsOpen(false)}>닫기</button></td>
-                                        </tfoot>
-                                    </table>
-                                </Modal>
+                                                </td>
+                                            </tr>
+                                            <tfoot>
+                                                <td><button onClick={() => setModalIsOpen(false)}>닫기</button></td>
+                                            </tfoot>
+                                        </table>
 
-
-
+                                    </Modal>
+                                </Modalst>
                                 <br />
                                 <hr />
                                 <summary>
@@ -175,6 +153,8 @@ export const Project_List = () => {
                                 <strong> Backend </strong>: Java, JSP <br />
                                 <strong>DataBase</strong>  : Mysql <br />
 
+
+
                                 <br />
                                 <hr />
 
@@ -185,6 +165,8 @@ export const Project_List = () => {
                                 <strong> Frontend </strong>: HTML5, CSS3 <br />
                                 <strong> Backend </strong> : Spring Framework <br />
                                 <strong> DataBase </strong>: Mysql
+
+
                                 <br />
                                 <br />
                                 <hr />
