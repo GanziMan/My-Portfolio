@@ -32,9 +32,8 @@ const Desktop = ({ children }) => {
 const Profilebox = styled.div`
         position:relative;
         width:110vw;
-        
-        margin-top:530%;
-        top:130px;
+        top:120px;
+        margin-top:540%;
         display:inline-block;
         border:4px solid;
         border-radius:4em;
@@ -97,10 +96,9 @@ function Profile() {
             <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
                 <GlobalStyles ></GlobalStyles>
             </ThemeProvider>
- 
-     
             <Project_List></Project_List>
             <Stack_List></Stack_List>
+        
          
         </div>
     );

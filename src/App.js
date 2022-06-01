@@ -8,7 +8,7 @@ import Profile_PJ_PC from './Desktop/Menu/Profile_PJ';
 import { useMediaQuery } from "react-responsive";
 import BoardList from './Desktop/components/BoardList';
 import Container from './Desktop/container/Container'
-
+import css from './App.css'
 
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
