@@ -46,10 +46,9 @@ export const Project_List = () => {
     `;
     const AC = styled.div`
     .wrapper{
-        position:relative;
-        top:110px;
-        transform:translateX(-50%); 
-        left:50%;
+      
+      
+     
         width:110vw;
     }
     .accordion{

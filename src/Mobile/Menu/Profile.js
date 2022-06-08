@@ -31,16 +31,14 @@ const Desktop = ({ children }) => {
 
 const Profilebox = styled.div`
         position:relative;
-        width:110vw;
-        top:120px;
-        margin-top:540%;
-        display:inline-block;
-        border:4px solid;
+        width:100vw;
+        height:100vh;
+        top:35px;
         border-radius:4em;
         li{
             margin:15px 0px;
         }
-        box-shadow:6px 5px 5px 5px rgba(0,0,0,0.2);
+       
 `;
 
 function Profile() {
@@ -92,13 +90,14 @@ function Profile() {
                    
                 </ul>
                 <Menubar></Menubar>
+                <Project_List></Project_List>
+                <Stack_List></Stack_List>
             </Profilebox>
             <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
                 <GlobalStyles ></GlobalStyles>
             </ThemeProvider>
-            <Project_List></Project_List>
-            <Stack_List></Stack_List>
         
+       
          
         </div>
     );

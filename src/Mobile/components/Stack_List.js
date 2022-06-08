@@ -5,9 +5,9 @@ import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaReact } from "react-icons/fa";
 export const Stack_List = () => {
     const AC = styled.div`
     .wrapper{
-        position:relative;
+     
         background: #ffc107;
-        top:70px;
+  
     }
    
     .ac1:hover{
