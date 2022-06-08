@@ -14,11 +14,6 @@ export const Project_List = () => {
     const AC = styled.div`
     .wrapper{
         width:100vw;
-        top:50px;
-      
-    }
-    .accordion{
-  
     }
    
     .ac1:hover{
