@@ -7,7 +7,6 @@ export const Stack_List = () => {
     .wrapper{
      
         background: #ffc107;
-  
     }
    
     .ac1:hover{
@@ -40,7 +39,7 @@ export const Stack_List = () => {
         <div>
             <AC>
                 <div className="wrapper">
-                    <section style={{ position: "relative", color: "BLACK"}}>
+                    <section style={{color: "BLACK"}}>
                         <br />
                         <h1>사용스택 <FaPaperclip></FaPaperclip> </h1>
                         <br />

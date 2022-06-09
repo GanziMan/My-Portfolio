@@ -28,8 +28,7 @@ export const Project_List = () => {
         backgroundColor: "rgba(255, 255, 255, 0.45)",
         zIndex: 10,
     },
-    content: {
-       
+    content: { 
         justifyContent: "center",
         background: "black",
         color:"balck",
@@ -46,10 +45,7 @@ export const Project_List = () => {
     `;
     const AC = styled.div`
     .wrapper{
-      
-      
-     
-        width:110vw;
+        width:100vw;
     }
     .accordion{
        margin-left:5%;
@@ -62,9 +58,7 @@ export const Project_List = () => {
     .item{
         background:Black;
         margin-bottom:5px;
-        padding:10px 20px;
-       
-       
+        padding:10px 20px; 
     }
     .title{
         color:white;
@@ -75,7 +69,6 @@ export const Project_List = () => {
         
     }
     .content{
-       
         color:white;
         max-height:0;
         overflow:hidden;

@@ -5,7 +5,7 @@ import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaReact } from "react-icons/fa";
 export const Stack_List = () => {
     const AC = styled.div`
     .wrapper{
-        
+       
         width:100vw;
         position:relative;
         left:50%;

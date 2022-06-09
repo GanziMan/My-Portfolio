@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {FaInstagram} from "react-icons/fa";
 const ButtonST=styled.div`
-    padding:20px;
+    padding:25px;
     background-color:#fff;
     border-radius:10px;
     border:3px solid ${props => props.color};
