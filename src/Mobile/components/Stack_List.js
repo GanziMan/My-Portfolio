@@ -5,7 +5,6 @@ import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaReact } from "react-icons/fa";
 export const Stack_List = () => {
     const AC = styled.div`
     .wrapper{
-     
         background: #ffc107;
     }
    
@@ -39,8 +38,11 @@ export const Stack_List = () => {
         <div>
             <AC>
                 <div className="wrapper">
+                    <br />
                     <section style={{color: "BLACK"}}>
+                      
                         <br />
+
                         <h1>사용스택 <FaPaperclip></FaPaperclip> </h1>
                         <br />
                         <div className="Stack"><h1 style={{ color: "#ffc107" }}>Front-end</h1>

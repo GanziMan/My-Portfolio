@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {FaQuestion} from "react-icons/fa";
 
 const ButtonST=styled.div`
-    padding:40px;
+    padding:30px;
     background-color:#fff;
     border-radius:10px;
     border:3px solid ${props => props.color};

@@ -10,7 +10,6 @@ import kmong from './kmong.png'
 import profile from './profile.png'
 import Modalkmong from 'react-modal';
 import ModalKDBC from 'react-modal';
-import ModalSchool from 'react-modal';
 export const Project_List = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [modalIsOpen2, setModalIsOpen2] = useState(false);
@@ -19,29 +18,22 @@ export const Project_List = () => {
     const [modalIsOpen5, setModalIsOpen5] = useState(false);
     const [modalIsOpen6, setModalIsOpen6] = useState(false);
     const Modalst = styled.div
-        `overlay: {
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: "rgba(255, 255, 255, 0.45)",
-        zIndex: 10,
-    },
-    content: { 
-        justifyContent: "center",
-        background: "black",
-        color:"balck",
-        overflow: "auto",
-        top: "10vh",
-        left: "10vw",
-        right: "10vw",
-        bottom: "10vh",
-        WebkitOverflowScrolling: "touch",
-        borderRadius: "14px",
-        outline: "none",
-        zIndex: 10,
-    }
+        `
+        backgroundColor: white;
+        zIndex: 10;
+        justifyContent: center;
+        color:black;
+        overflow: auto,
+        width:100wh;
+        top: 50vh;
+        left: 50vw;
+        right: 50vw;
+        bottom: 50vh;
+        WebkitOverflowScrolling: touch;
+        borderRadius: 14px;
+        outline: none;
+        zIndex: 30;
+    
     `;
     const AC = styled.div`
     .wrapper{
@@ -63,10 +55,8 @@ export const Project_List = () => {
     .title{
         color:white;
         display:flex;
-        justify-content:space-between;
-        
+        justify-content:space-between; 
         ccursor:pointer;
-        
     }
     .content{
         color:white;
@@ -97,6 +87,7 @@ export const Project_List = () => {
     return (
         <div>
             <AC>
+         
                 <div className="wrapper">
                     <section style={{ background: "black", color: "white", width: "100%" }}>
                         <div style={{ marginRight: "20px" }}>
@@ -114,13 +105,15 @@ export const Project_List = () => {
                                 </strong>
                                
 
-                                <Modalst>
-                                    <Modalkmong isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+                               
+                                    <Modalkmong isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}  >
+                                     <Modalst>
+                                             <span style={{background:"black"}}>
                                         <h2>크몽 웹 개발자 프리랜서</h2>
                                         <hr />
                                         <table>
                                             <tr>
-                                                <td><strong> 크몽 프리랜서 활동 URL : </strong>   <a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a></td>
+                                                <td><strong> 크몽 프리랜서 활동 URL : </strong><a href="https://kmong.com/gig/372693">https://kmong.com/gig/372693</a></td>
                                             </tr>
                                             <br />
                                             <tr>
@@ -139,9 +132,10 @@ export const Project_List = () => {
                                                 <td><button onClick={() => setModalIsOpen(false)}>닫기</button></td>
                                             </tr>
                                         </table>
-
+                                        </span>
+                                        </Modalst>
                                     </Modalkmong>
-                                </Modalst>
+                              
                                 <br />
                                 <hr />
                                 <summary>
@@ -409,8 +403,9 @@ export const Project_List = () => {
                             </div>
                         </div>
                     </section>
-                    <br /><br />
+                
                 </div>
+               
             </AC>
         </div>
     )

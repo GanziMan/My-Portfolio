@@ -33,7 +33,7 @@ const Profilebox = styled.div`
         position:relative;
         width:100vw;
         height:100vh;
-        top:35px;
+        top:45px;
         border-radius:4em;
         li{
             margin:15px 0px;

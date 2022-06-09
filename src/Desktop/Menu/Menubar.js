@@ -17,6 +17,7 @@ bottom:0;
 width:560px;
 height:150px;
 left:50%;
+top:30px;
 padding:15px 30px;
 padding-bottom:10px;
 transform:translateX(-50%);
