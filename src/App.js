@@ -35,20 +35,15 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Profile} />
                 <Route path="/Profile_PJ" component={Profile_PJ} />
-
-                
             </Switch>
             </Mobile>
 
             <Desktop>
             
-            <Switch>
-           
+            <Switch> 
                 <Route exact path="/" component={Profile_PC} />
                 <Route path="/Profile_PJ" component={Profile_PJ_PC} />
-                
             </Switch>
-            
             </Desktop>
            
         </div>

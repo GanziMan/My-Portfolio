@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
-import {FaQuestion} from "react-icons/fa";
+import {SiNotion } from "react-icons/si";
+import {} from "react-icons/fa";
 
 const ButtonST=styled.div`
     padding:30px;
@@ -25,7 +25,7 @@ const ButtonST=styled.div`
 class MenuButtonQnA extends React.Component{
     render(){
         return <ButtonST color={this.props.color}>
-                <FaQuestion style={{fontSize:"30px"}}></FaQuestion>
+                <SiNotion style={{fontSize:"30px"}}></SiNotion>
                 <br></br>
                 <br></br>
                 <span>{this.props.text}</span>
