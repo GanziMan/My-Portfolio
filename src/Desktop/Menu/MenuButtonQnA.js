@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {SiNotion } from "react-icons/si";
-import {} from "react-icons/fa";
+
+import {SiNotion} from "react-icons/si";
 
 const ButtonST=styled.div`
     padding:30px;

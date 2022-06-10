@@ -11,7 +11,7 @@ export const Stack_List = () => {
         left:50%;
         transform:translateX(-50%);
         
-       
+      
     }
     .accordion{
       
@@ -76,7 +76,8 @@ export const Stack_List = () => {
     .Stack{
         box-shadow:8px 6px 6px 6px rgba(0,0,0,0.1);
         background:white;
-        height:400px;
+        height:40%;
+        width:100%;
         padding:20px;
         border-radius:5em;
         

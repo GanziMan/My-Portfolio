@@ -14,10 +14,9 @@ position:relative;
 display:flex;
 justify-content:space-between;
 bottom:0;
-width:560px;
-height:150px;
+width:70%;
+
 left:50%;
-top:30px;
 padding:15px 30px;
 padding-bottom:10px;
 transform:translateX(-50%);
@@ -30,15 +29,14 @@ border-top-right-radius:25px;
 
 
 
-// <Link to="Profile_PJ"><MenuButtonQnA text="QnA" color="#171515"></MenuButtonQnA></Link>
+
 class Menubar extends React.Component {
     render() {
         return <div>
             <Menu>
                 <a href="https://www.instagram.com/kbs_uu/"><MenuButtonInsta text="Instagram" color="#3f279b"></MenuButtonInsta></a>
                 <a href="https://github.com/GanziMan"><MenuButtonGithub text="Github" color="#171515"></MenuButtonGithub></a>
-                <a href="https://www.notion.so/edcd0ed97c8c43fc9e98062a75966631?v=8ddb8160aaef4b5990035138c6ad3b3a"><MenuButtonQnA text="QnA" color="#171515"></MenuButtonQnA></a>
-        
+                <Link to="Profile_PJ"><MenuButtonQnA text="QnA" color="#171515"></MenuButtonQnA></Link>
             </Menu>
 
         </div>

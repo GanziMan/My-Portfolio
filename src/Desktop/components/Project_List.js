@@ -14,6 +14,7 @@ export const Project_List = () => {
     const AC = styled.div`
     .wrapper{
         width:100vw;
+      
     }
    
     .ac1:hover{
