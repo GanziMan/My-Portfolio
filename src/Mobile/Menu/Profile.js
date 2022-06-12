@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from './bumsu2.JPG';
+import img from './bumsu.jpeg';
 import Menubar from "./Menubar";
 import { useState } from 'react';
 import { lightTheme, darkTheme } from '../../theme';
