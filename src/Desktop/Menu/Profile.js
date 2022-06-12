@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from './bumsu2.JPG';
+import img from './bumsu.jpeg';
 import Menubar from "./Menubar";
 import { useState } from 'react';
 import { lightTheme, darkTheme } from '../../theme';
@@ -63,8 +63,8 @@ function Profile() {
             <Profilebox>
 
                 <h2 style={{}}>Web Developer Portfolio</h2>
-                <img style={{ width: "26%",height:"", border: "1px solid black", borderRadius: "8em",float:"left",marginLeft:"30%" }} alt="profile" src={img}></img>
-                <ul style={{ listStyle: "none", textAlign: "left",float:"left" }}>
+                <img style={{ width:"320px",height:"420px", border: "1px solid black", borderRadius: "8em",float:"left",marginLeft:"30%" }} alt="profile" src={img}></img>
+                <ul style={{ width:"20%", listStyle: "none", textAlign: "left",float:"left" }}>
                     <div>
                         <Toggle theme={theme} toggleTheme={toggleTheme} />
                         {theme === 'light' ? 'Light Mode' : 'Dark Mode'}

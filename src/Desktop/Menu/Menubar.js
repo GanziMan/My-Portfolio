@@ -36,7 +36,7 @@ class Menubar extends React.Component {
             <Menu>
                 <a href="https://www.instagram.com/kbs_uu/"><MenuButtonInsta text="Instagram" color="#3f279b"></MenuButtonInsta></a>
                 <a href="https://github.com/GanziMan"><MenuButtonGithub text="Github" color="#171515"></MenuButtonGithub></a>
-                <Link to="Profile_PJ"><MenuButtonQnA text="QnA" color="#171515"></MenuButtonQnA></Link>
+                <a href="https://nutritious-bun-953.notion.site/edcd0ed97c8c43fc9e98062a75966631?v=8ddb8160aaef4b5990035138c6ad3b3a"><MenuButtonQnA text="QnA" color="#171515"></MenuButtonQnA></a>
             </Menu>
 
         </div>
