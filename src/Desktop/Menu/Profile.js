@@ -62,7 +62,7 @@ function Profile() {
         <div style={{ textAlign: "center" }}>
             <Profilebox>
 
-                <h2 style={{}}>Web Developer BLOG</h2>
+                <h2 style={{}}>Web Developer Portfolio</h2>
                 <img style={{ width:"320px",height:"420px", border: "1px solid black", borderRadius: "8em",float:"left",marginLeft:"30%" }} alt="profile" src={img}></img>
                 <ul style={{ listStyle: "none", textAlign: "left",float:"left" }}>
                     <div>
