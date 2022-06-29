@@ -14,17 +14,14 @@ position:relative;
 display:flex;
 justify-content:space-between;
 bottom:0;
-width:40%;
+width:600px;
 top:50px;
-left:50%;
+left:35%;
 padding:15px 30px;
 padding-bottom:10px;
-transform:translateX(-50%);
 border-top-left-radius:25px;
 border-top-right-radius:25px;
-
-    
-`;
+`;  
 
 
 

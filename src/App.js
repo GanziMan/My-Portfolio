@@ -11,7 +11,7 @@ import Container from './Desktop/container/Container'
 import css from './App.css'
 
 const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 })
+    const isDesktop = useMediaQuery({ minWidth: 1025 })
     return isDesktop ? children : null
   }
   const Tablet = ({ children }) => {

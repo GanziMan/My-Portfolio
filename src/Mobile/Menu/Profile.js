@@ -76,7 +76,7 @@ function Profile() {
                         <strong>Name</strong>: Bumsu Kim
                     </li>
                     <li>
-                        <strong>Email</strong>:qjatn50089@gmail.com
+                        <strong>Email</strong>: qjatn50089@gmail.com
                     </li>
                     <li>
                         <strong>Phone</strong>: 010-2784-0955

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { SiNetlify, SiSpring, SiDjango, SiMysql } from "react-icons/si";
+import { SiNetlify, SiSpring, SiDjango, SiMysql,SiHeroku } from "react-icons/si";
 import { FaHtml5, FaCss3, FaPaperclip, FaJs, FaReact } from "react-icons/fa";
 export const Stack_List = () => {
     const AC = styled.div`
